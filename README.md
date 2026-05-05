@@ -1,17 +1,15 @@
 # 🧠 Neural-Sense
 ### Sentiment Classification of Consumer Reviews using RNNs / LSTMs
 
-**Authors:** Ahmad Hassan (455445) · Muhammad Fareed Ghani (463390)  
-**Class:** BSCS13-B · Deep Learning
-
 ---
 
 ## Project Structure
 
 ```
 neural-sense/
-├── NeuralSense_Colab_Notebook.py   ← All Colab cell code (copy cell-by-cell)
-├── app.py                          ← Streamlit inference app (run locally)
+├── neural_sense.py         ← All Colab cell code (Optimized for Google Colab)
+├── app.py                  ← Streamlit inference app (run locally)
+├── requirements.txt        ← System requirements for the streamlit interface
 └── README.md
 ```
 
@@ -65,7 +63,7 @@ After running the Colab notebook you will also have:
 ### Requirements
 
 ```bash
-pip install streamlit tensorflow numpy
+pip install -r requirements.txt
 ```
 
 ### Setup
@@ -141,10 +139,8 @@ Dense (1, Sigmoid)  →  P(Positive)
 
 | Metric | SimpleRNN | BiLSTM |
 |--------|-----------|--------|
-| Test Accuracy | ~82–84 % | ~87–89 % |
-| AUC-ROC | ~0.90 | ~0.95 |
-| F1-Score | ~0.83 | ~0.88 |
+| Test Accuracy | ~50 % | ~87–89 % |
+| AUC-ROC | ~0.53 | ~0.95 |
+| F1-Score | ~0.45 | ~0.88 |
 
 ---
-
-*Neural-Sense · BSCS13-B · Deep Learning*
